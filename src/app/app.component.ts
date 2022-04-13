@@ -64,6 +64,7 @@ export class AppComponent {
     if(editdata!=null){
       this.userInfo[this.editInd] = editdata.value;
       localStorage.setItem('userInfo', JSON.stringify(this.userInfo));
+      this.toDoForm.reset();
      
     }
   }
