@@ -63,6 +63,7 @@ export class AppComponent {
   update(editdata){
     if(editdata!=null){
       this.userInfo[this.editInd] = editdata.value;
+      localStorage.setItem('userInfo', JSON.stringify(this.userInfo));
      
     }
   }
